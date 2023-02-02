@@ -1,0 +1,99 @@
+.s-main {
+    width: 100%;
+    .container {
+        min-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        header {
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+            z-index: 1;
+        }
+        form{
+            width: 100%;
+            height: 100%;
+            margin: 10vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .form-group{
+                width: 60%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .form-control{
+                    margin: 10px 0;
+                    height: 10vh;
+                    border-color: #000;
+                    &::placeholder{
+                        font-size: 2.5vh;
+                    }
+                }
+                .is-invalid{
+                    border: 2px solid red;
+                }
+                .is-valid{
+                    border: 2px solid green;
+                }
+                #estado{
+                    text-transform: uppercase;
+                    &::placeholder{
+                        text-transform: none;
+                    }
+                }
+            }
+            .form-check{
+                width: 60%;
+                margin: 1rem 0;
+                font-size: 1.2rem;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                .form-check-input{
+                    border-color: #000;
+                    width: 20px;
+                    height: 20px;
+                }
+                .form-check-label{
+                    width: 98%;
+                }
+            }
+            .form-btn{
+                margin: 1rem 0;
+                height: 10vh;
+                background: linear-gradient(rgb(36, 36, 36), #000);
+                color: #fff;
+                padding: 0.2rem 2rem;
+                border-radius: 5px;
+                border: none;
+                font-size: 1.4rem;
+                font-weight: 500;
+                &.left{
+                    transform: translateX(-200%);
+                    animation: center-left infinite ease-in-out;
+                }
+                &.right{
+                    transform: translateX(200%);
+                    animation: center-right infinite ease-in-out;
+                }
+                &.normal{
+                    transform: translateX(0%);
+                    animation: right-center infinite ease-in-out;
+                }
+                &.normal2{
+                    transform: translateX(0%);
+                    animation: left-center infinite ease-in-out;
+                }
+            }
+        }
+    }
+}

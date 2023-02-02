@@ -1,0 +1,32 @@
+@keyframes center-left{
+    0% {
+        transform: translateX(0%);
+    }
+    2000% {
+        transform: translateX(-200%);
+    }
+}
+@keyframes left-center{
+    0% {
+        transform: translateX(-200%);
+    }
+    2000% {
+        transform: translateX(0%);
+    }
+}
+@keyframes center-right {
+    0% {
+        transform: translateX(0%);
+    }
+    2000% {
+        transform: translateX(200%);
+    }
+}
+@keyframes right-center {
+    0% {
+        transform: translateX(200%);
+    }
+    2000% {
+        transform: translateX(0%);
+    }
+}
